@@ -1,0 +1,22 @@
+nav {
+    width: 655px;
+    height: 32px;
+    margin-left: 15px;
+}
+
+ul {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+    width: 105px;
+    height: 16px;
+    padding-right: 25px;
+    color: white;
+}

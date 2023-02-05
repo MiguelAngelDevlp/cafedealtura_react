@@ -1,0 +1,13 @@
+#bagLogo {
+    width: 63px;
+    display: flex;
+   
+    color: inherit;
+}
+
+.bag {
+    width: 55px;
+    color: white;
+    filter: invert(1);
+    margin-right: 10px;
+}
