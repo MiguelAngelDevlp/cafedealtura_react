@@ -1,7 +1,9 @@
-import Button from "../Button/Button";
+import Button from "../Button/Button"
 import './OneSection.css'
 
-const OneSection = ({subtitle, title, imagen, parr}) => {
+
+
+const OneSection = ({subtitle, title, src, parr}) => {
 
     return (
         <div className="section">
@@ -14,7 +16,7 @@ const OneSection = ({subtitle, title, imagen, parr}) => {
             </div>
 
             <div className="section-two">
-                <img src={imagen} alt='Hands taking fruits'/>
+                <img  id="margins"src={src} alt='Hands taking fruits'/>
             </div>
         </div>
     )

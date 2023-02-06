@@ -1,11 +1,14 @@
 import "./Bag.css"
 
+import bagImage from '../assets/bag.svg'
+
+
 const Bag = () => {
 
 
     return (
         <div id="bagLogo">
-            <img src="./assets/bag.svg" alt="Bag" className="bag"/>
+            <img src={bagImage} alt="Bag" className="bag"/>
             <span id="count"></span>
         </div>
     )
