@@ -1,6 +1,7 @@
 import HelpForm from "../HelpForm/HelpForm"
 import './Help.css'
-
+import mail from "../assets/mail.png"
+import Icon from "../assets/Icon.png"
 
 
 
@@ -20,13 +21,13 @@ const Help = () => {
                 <br/>
                 <p>742 Evergreen Terrace <br /> Springfield, OR 12345</p>
                 <br/>
-                <div class="help">
-                    <img src="./assets/Icon.png" alt="Icon" />
+                <div class="helpas">
+                    <img src={Icon} alt="Icon" />
                     <p>+1 (555) 123-4567</p>
                 </div>
 
-                <div class="help">
-                    <img id="loguito" src="./assets/mailIcon.svg" alt="Mail Icon" />
+                <div className="helpas">
+                    <img  src={mail} alt="Mail Icon" />
                     <p>support@example.com</p>
                 </div>
                 <br/>

@@ -1,0 +1,87 @@
+#box-precio-total {
+    background: #F7F5F3;
+    width: 450px;
+    padding: 24px;
+    position: absolute;
+    top: 70px;
+    right: 60px;
+}
+
+#box-precio-total h5 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#caja-subtotal {
+    border-top: 1px solid #E3DED7;
+    margin-top: 10px;
+    padding-top: 16px;
+}
+.caja-envio span{
+    font-weight: 700;
+}
+
+.caja-envio {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+
+
+#total-id span{
+    font-weight: 700;
+}
+
+
+
+#total-id h6{
+    font-size: 15px;
+    margin-top: 0px;
+}
+
+#total-id {
+    display: flex;
+    border-top: 1px solid #E3DED7;
+    padding-top: 16px;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+
+.iva {
+    margin-left: 322px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    margin-top: -40px;
+    font-size: 14px;
+    width: 500px;
+    color: #515051
+}
+
+#div-grande button{
+background-color: #2A5B45;
+}
+
+
+#buttons-total-price a {
+    text-decoration: none;
+}
+
+#btn{
+    background-color: #2A5B45;
+}
+
+.btn-shop-go {
+    color: #2A5B45;
+    border: none;
+    background-color: transparent;
+    width: 147px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.btn-price-check {
+    background: #2A5B45;
+    border-radius: 4px;
+    color: white;
+    border: none;
+}

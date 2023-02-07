@@ -1,38 +1,32 @@
 import './App.css';
+
+import { Route, Routes } from 'react-router-dom'
+import HomePage from './pages/HomePage/HomePage';
+import Shop from './pages/HomePage/Shop';
+import { ContextProvider } from './Context/Context';
+import Cesta from './pages/HomePage/Cesta';
 import Header from './components/Header/Header';
-import OneSection from './components/OneSection/OneSection';
-import TwoSection from './components/TwoSection/TwoSection';
-import ThreeSection from './components/ThreeSection/ThreeSection';
-import FourSect from './components/FourSect/FourSect';
-import Help from './components/Help/Help';
-import Footer from './components/Footer/Footer';
-import Heroimage from './components/assets/Heroimage.png'
-import Heroimages from './components/assets/HeroImg.png'
+import Pasarela from './pages/HomePage/Pasarela';
 import EndFooter from './components/EndFooter/EndFooter';
+import Succes from './pages/HomePage/Succes';
 
 
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <OneSection
-        title={'El mejor café del mundo, ahora  en tu casa.'}
-        src={Heroimage}
-        subtitle='De la planta a tu casa'
-        parr={'Trabajamos con agricultores de todo el mundo para seleccionar los mejores granos de café y que puedas viajar desde la comodidad de tu hogar.'}>
-      </OneSection>
-      <TwoSection />
-      <ThreeSection />
-      <FourSect />
-      <OneSection
-        subtitle='Pruébalo en nuestro coffee shop'
-        src={Heroimages}
-        parr={'Visita nuestra cafetería en el centro de la ciudad para probar los granos de café antes de hacer tu pedido y llévate un descuento'}>
-      </OneSection>
-            <Help/>
-            {/* <Footer/> */}
-            {/* <EndFooter/> */}
+      <ContextProvider>
+        <Header/>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/shop' element={<Shop />} />
+          <Route path='/cesta' element={<Cesta/>}/>
+          <Route path='/Pasarela' element={<Pasarela/>}/>
+          <Route path='/Succes' element={<Succes/>}/>
+        </Routes>
+      </ContextProvider>
+<EndFooter/>
+
     </div>
   );
 }

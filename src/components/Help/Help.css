@@ -87,6 +87,10 @@ textarea {
 }
 
 
+.helpas{
+    display: flex;
+}
+
 #help{
     display: flex;
 }

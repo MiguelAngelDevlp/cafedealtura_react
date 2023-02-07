@@ -1,5 +1,6 @@
 import Acord from '../Acord/Acord,'
 import './FourSect.css'
+import arrow from '../assets/Vector.png'
 
 
 
@@ -14,6 +15,7 @@ const FourSect = () => {
                 <Acord
                     title={'¿Cómo hago el pedido?'}
                     text={'Selecciona el café que desees probar y completa el proceso de compra. Si lo prefieres, te preguntaremos cada cuánto quieres que te lo mandemos a casa y así nunca te quedarás sin café.'}
+                    src={arrow}
                 />
 
                 <Acord

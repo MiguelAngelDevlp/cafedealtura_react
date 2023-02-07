@@ -13,16 +13,15 @@ const Header = () => {
 
     return (
         <div id= "header">
-            <IconLogo/>
-            <NavList/>
-            <IconLogin 
-            src={phone}
-            text={'+34 919 49 05 18'}
-    
-            />
-            <Button text={'Iniciar sesión'} />
-            <Bag/>
-        </div>
+        <IconLogo/>
+        <NavList className={'nav-bar'}/>
+        <IconLogin 
+        src={phone}
+        text={'+34 919 49 05 18'}
+        />
+        <Button className={'btn-navbar'} text={'Iniciar sesión'} />
+        <Bag/>
+    </div>
     )
 }
 

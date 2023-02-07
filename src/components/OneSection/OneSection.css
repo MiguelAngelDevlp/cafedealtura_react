@@ -8,15 +8,29 @@
 }
 
 .childSection {
-    margin-top: 120px;
-    margin-left: 40px;
+    margin-top: 80px;
+    margin-left: 180px;
+    width: 600px;
+}
+
+.tamaño{
+    margin-top: 70px;
+
+
+}
+
+.section-two{
+    margin-right: 50px;
+}
+.childSection Button#origin {
+    background-color: black;
 }
 
 #margins{
-    padding: 20px;
-    width: 650px;
+    padding: 0px;
+    width: 700px;
     margin-top: 10px;
-    margin-right: 15px;
+    margin-right: 80px;
 }
 
 #bagimage{
@@ -45,9 +59,10 @@
     margin-bottom: 16px;
 }
 
-.childSection Button {
+.childSection Button, #origin {
     /* border-radius: 8px; */
     width: 168px;
     height: 40px;
     margin-right: 16px;
+    
 }

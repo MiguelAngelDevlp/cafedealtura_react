@@ -1,9 +1,7 @@
-import Button from "../Button/Button"
 import './OneSection.css'
 
 
-
-const OneSection = ({subtitle, title, src, parr}) => {
+const OneSection = ({ subtitle, title, src, parr, bu, bu2 }) => {
 
     return (
         <div className="section">
@@ -11,12 +9,15 @@ const OneSection = ({subtitle, title, src, parr}) => {
                 <h4>{subtitle}</h4>
                 <h1>{title}</h1>
                 <p>{parr}</p>
-                <Button text={'Descubrir origenes'}/>
-                <Button text={'Comprar café'}/>
+                
+                <div>
+                    {bu}
+                    {bu2}
+                </div>
             </div>
 
             <div className="section-two">
-                <img  id="margins"src={src} alt='Hands taking fruits'/>
+                <img  className='tamaño' src={src} alt='Hands taking fruits' />
             </div>
         </div>
     )

@@ -7,7 +7,7 @@ const IconLogin = ({src, text}) => {
 
     return (
             <div id="iconPhone">
-                <img src={src} alt="Icon Telephone" id="phone-icon" />
+                <img className="small" src={src} alt="Icon Telephone" id="phone-icon" />
                 <p>{text}</p>
             </div>
     )

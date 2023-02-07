@@ -3,10 +3,17 @@
     background-color: #1F1815;
     display: flex;
     justify-content: flex-start;
-
+width: 1903px;
 }
 
-
+#move{
+    display: inline-flex;
+    /* justify-content: space-evenly; */
+    /* text-align: center; */
+    align-items: center;
+    width: 180px;
+    margin-top: -15px;
+}
 
 #logos-footer {
     margin: 28px 300px 40px 37px;
@@ -54,11 +61,15 @@
 
 #remake-icon-mail p {
     padding-top: 15px;
-    padding-left: 10px;
+
 }
 
 #remake-icon-mail img {
     padding-top: 15px;
+}
+
+#flex{
+    display: flex;
 }
 
 #logos-footer IconLogin {
@@ -67,22 +78,35 @@
 
 .list-footer {
     margin: 83px 176px 43px 0;
+    flex-direction: column;
+    margin-left: 200px;
+}
+
+.list-footer li a {
+    text-decoration: none;
+    color: white;
 }
 
 .list-footer li {
     list-style: none;
     padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
     font-weight: 600;
     font-size: 14px;
 }
 
 #listTerms {
     margin: 83px 0 43px 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 190px;
 }
 
 #listTerms li {
     padding-bottom: 16px;
     font-weight: 600;
     font-size: 14px;
+    display: flex;
     list-style: none;
 }

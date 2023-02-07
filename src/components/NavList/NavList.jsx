@@ -1,13 +1,14 @@
+import { Link } from "react-router-dom"
 import "./NavList.css"
 
 
-const NavList = () => {
+const NavList = ({className}) => {
 
 
     return (
-        <nav>
+        <nav className={className}>
             <ul>
-                <li>Tienda</li>
+                <li><Link to= {'/Shop'}>Tienda</Link></li>
                 <li>Suscripción</li>
                 <li>Para empresas</li>
                 <li>Sobre nosotros</li>

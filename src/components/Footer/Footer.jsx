@@ -1,23 +1,23 @@
-
-
 import IconLogin from "../IconLogin/IconLogin"
 import IconLogo from "../IconLogo/IconLogo"
 import NavList from "../NavList/NavList"
-
+import mail from "../assets/mail.png"
+import Icon from "../assets/Icon.png"
 import './Footer.css'
+
 
 
 
 const Footer = () => {
 
 
-
-    return(
+    return (
         <div id='pre-footer'>
 
             <div id='logos-footer'>
 
                 <IconLogo />
+
 
                 <h5>Te ayudamos en</h5>
 
@@ -30,7 +30,7 @@ const Footer = () => {
 
                 <div id='remake-icon-mail'>
                     <IconLogin
-                        src={iconImageMail}
+                        src={mail}
                         text={'hola@cafedealtura.com'}
                     />
                 </div>
@@ -49,6 +49,5 @@ const Footer = () => {
         </div>
     )
 }
-
 
 export default Footer
