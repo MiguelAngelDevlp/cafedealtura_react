@@ -13,6 +13,12 @@
     top: 0;
     z-index: 1;
 }
+#header button{
+    background-color: #515051 ;
+    color: white;
+    border-radius:4px ;
+}
+
 
 .nav-bar {
     width: 655px;

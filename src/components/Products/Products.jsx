@@ -42,7 +42,7 @@ const Products = () => {
 
 
 
-    
+
 
     const addItem = (coffee) => {
         const cafeAlto = {
@@ -77,7 +77,7 @@ const Products = () => {
     return (
         <div id="news">
 
-            {fetching && <h1>LOADING...</h1>}
+            {fetching && <h1>Cargando...</h1>}
 
 
             {coffees.map((coffee) => {

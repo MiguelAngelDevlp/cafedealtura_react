@@ -39,6 +39,10 @@
     margin-top: 0px;
 }
 
+.btn-price-check{
+    background-color: #dadada;
+}
+
 #total-id {
     display: flex;
     border-top: 1px solid #E3DED7;
@@ -61,17 +65,60 @@
 background-color: #2A5B45;
 }
 
+#pagar button{
+    background-color: #2A5B45;
+    color: white;
+    border: none;
+    width: 200px;
+    font-size: 17px;
+    font:200;
+    border-radius: 4px;
+}
 
 #buttons-total-price a {
     text-decoration: none;
 }
-
-#btn{
+#botons button{
     background-color: #2A5B45;
+    color: white;
+    border-radius: 4px;
+    border: none;
+}
+#compra button{
+ 
+    background-color: #E3DED7;
+    color: #2A5B45;
+    background: transparent;
+    margin-left: 10px;
+    Font-size: 16px;
+    font-weight: 500;
+    /* border-color: #E3DED7; */
+    border: none;
+    text-decoration: underline;
+    width: 200px;
 }
 
+#botons{
+    display: flex;
+}
+
+/* #buttons-total-price button{
+    background-color: #2A5B45;
+    border-radius: 4px;
+    color: white;
+} */
+.testimonial-contenedor{
+    background-color: #F7F5F3;
+}
+
+.btncompra{
+    background-color: #E3DED7;
+}
+
+
+
 .btn-shop-go {
-    color: #2A5B45;
+    color: white;
     border: none;
     background-color: transparent;
     width: 147px;
@@ -79,9 +126,11 @@ background-color: #2A5B45;
     font-size: 14px;
 }
 
-.btn-price-check {
-    background: #2A5B45;
+
+.btnPrice {
+   
     border-radius: 4px;
     color: white;
+    padding: 15px;
     border: none;
 }

@@ -31,8 +31,7 @@ const Pasarela = () => {
         <div>
             <PaymentMethod/>
             <Checkout/>
-            <PriceBox tipo={nueve}
-            />
+            <PriceBox tipo={nueve} text='Pagar y realizar pedido' page={'pasarela'}/>
         </div>
     )
 }

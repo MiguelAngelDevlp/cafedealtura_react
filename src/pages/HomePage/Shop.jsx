@@ -20,6 +20,7 @@ const Shop = () => {
 
     return (
         <div className="App">
+            <h3>Ultimos Origenes</h3>
             <ProductShop/>
             <TwoSection />
             <Footer />

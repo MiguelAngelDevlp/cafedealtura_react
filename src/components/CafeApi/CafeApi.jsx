@@ -36,6 +36,9 @@ const CafeApi = () => {
             .catch(err => console.error(err))
     }, [])
 
+
+
+    
     const addItem = (coffee) => {
         const cafeAlto = {
             name: coffee.brand,
@@ -46,8 +49,6 @@ const CafeApi = () => {
         }
 
         const noDuplicate = cart.some(e => e._id === coffee._id)
-
-
 
         if (noDuplicate) {
 
@@ -72,7 +73,7 @@ const CafeApi = () => {
     return (
         <div id="news">
 
-            {fetching && <h1>LOADING...</h1>}
+            {fetching && <h1>Cargando...</h1>}
 
             
             {coffees.map((coffee) => {

@@ -108,6 +108,7 @@
     font-size: 18px;
     margin: 10px;
     cursor: pointer;
+    background-color: #2A5B45;
 }
 
 #shop-buttons button:hover {

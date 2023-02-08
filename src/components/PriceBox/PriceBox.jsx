@@ -1,20 +1,18 @@
 
 
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import { Link } from "react-router-dom"
 import { CartContext } from "../../Context/Context"
+import Button from "../Button/Button"
 
 import './PriceBox.css'
 
 
-const PriceBox = ({ tipo }) => {
+const PriceBox = ({ tipo, text, doblete, page }) => {
 
     const { cart, setCart } = useContext(CartContext)
     const { shipping, setShipping } = useContext(CartContext)
-    const { choose, setChoose } = useContext(CartContext)
-    const [sendPrice, setSendPrice] = useState('GRATIS')
-    const [subtotalPrice, setSubtotalPrice] = useState(0)
-    const [IVAPrice, setIVAPrice] = useState(0)
+
 
 
 
@@ -53,7 +51,7 @@ const PriceBox = ({ tipo }) => {
                         <span>{tipo} </span>
                     </div>
 
-                    <div  id='total-id'>
+                    <div id='total-id'>
                         <h6>TOTAL </h6>
                         <span>{send.toFixed(2)} €</span>
                     </div>
@@ -61,9 +59,24 @@ const PriceBox = ({ tipo }) => {
                     <p className="iva">Incluye {iva.toFixed(2)}€ de IVA</p>
                 </div>
 
-                <div className="div-grande">
-                    <button className="btn"><Link className="btn" to={'/Succes'}>Ir al checkout</Link></button>
-                    <Link to={'/Shop'}>Seguir comprando</Link>
+                <div id="buttons-total-price">
+                    {page === 'Cesta' ? (
+                        <div id="botons">
+                            <div id="btones">
+                                <Link to={'/pasarela'}><Button className={'btnPrice'} text={text} ></Button></Link>
+                            </div>
+                            <div id="compra">
+                                <Link to={'/Shop'}><Button className={['testimonial-contenedor']} text={doblete}></Button></Link>
+                            </div>
+                        </div>
+                    ) : (
+                        <div id="pagar">
+                            <Link to={'/succes'} className='btn-price-check'><Button text={text} >Ir a checkout</Button></Link>
+                        </div>
+                    )}
+
+
+
                 </div>
 
             </div>)

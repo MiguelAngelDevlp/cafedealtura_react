@@ -25,6 +25,7 @@ const FourSect = () => {
 
                 <Acord
                     title={'¿Es posible enviar café a mi oficina?'}
+                    text={'Viajamos constantemente para encontrar los mejores granos y a los agricultores más exigentes. Si podemos ofrecerte estos precios es porque tratamos directamente con los productores de café, sin intermediarios. Así obtenemos el mejor precio para ti y la persona que está detrás de los granos de café recibe el mayor beneficio posible.'}
                 />
             </div>
         </div>

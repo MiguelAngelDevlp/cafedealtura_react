@@ -103,7 +103,7 @@ const Cesta = () => {
                     <span>9,00 €</span>
                 </div>
 
-                <PriceBox tipo={radio} />
+                <PriceBox tipo={radio}className={'btnPrice'} text='Ir al checkout' doblete='Seguir comprando' page={'Cesta'}/>
             </div>
         </div>
     )

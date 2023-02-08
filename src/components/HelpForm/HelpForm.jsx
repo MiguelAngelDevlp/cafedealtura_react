@@ -60,8 +60,10 @@ const HelpForm = () =>{
                             </label>
                     </div>
                 </div>
+<div id="formulario">
 
                 <Button text={'Enviar'}/>
+</div>
 
 
             </form>
